@@ -1,0 +1,253 @@
+doctype html
+html(lang='en')
+	head
+		title AATSU
+
+		meta(charset='UTF-8')
+		meta(name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no")
+		meta(name='mobile-web-app-capable', content='yes')
+
+		link(rel="apple-touch-icon" sizes="57x57" href="img/icons/favicons/apple-touch-icon-57x57.png")
+		link(rel="apple-touch-icon" sizes="60x60" href="img/icons/favicons/apple-touch-icon-60x60.png")
+		link(rel="apple-touch-icon" sizes="72x72" href="img/icons/favicons/apple-touch-icon-72x72.png")
+		link(rel="apple-touch-icon" sizes="76x76" href="img/icons/favicons/apple-touch-icon-76x76.png")
+		link(rel="apple-touch-icon" sizes="114x114" href="img/icons/favicons/apple-touch-icon-114x114.png")
+		link(rel="apple-touch-icon" sizes="120x120" href="img/icons/favicons/apple-touch-icon-120x120.png")
+		link(rel="apple-touch-icon" sizes="144x144" href="img/icons/favicons/apple-touch-icon-144x144.png")
+		link(rel="apple-touch-icon" sizes="152x152" href="img/icons/favicons/apple-touch-icon-152x152.png")
+		link(rel="apple-touch-icon" sizes="180x180" href="img/icons/favicons/apple-touch-icon-180x180.png")
+		link(rel="icon" type="image/png" href="img/icons/favicons/favicon-32x32.png" sizes="32x32")
+		link(rel="icon" type="image/png" href="img/icons/favicons/android-chrome-192x192.png" sizes="192x192")
+		link(rel="icon" type="image/png" href="img/icons/favicons/favicon-96x96.png" sizes="96x96")
+		link(rel="icon" type="image/png" href="img/icons/favicons/favicon-16x16.png" sizes="16x16")
+		link(rel="manifest" href="img/icons/favicons/manifest.json")
+		link(rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5")
+		meta(name="msapplication-TileColor" content="#da532c")
+		meta(name="msapplication-TileImage" content="mstile-144x144.png")
+		meta(name="theme-color" content="#ffffff")
+
+		link(rel='stylesheet', href='vendor/normalize-css/normalize.css')
+		link(rel='stylesheet', href='vendor/font-awesome/css/font-awesome.min.css')
+		link(rel='stylesheet', href='css/concated.css')
+
+	body
+
+		.preloader
+			.after
+
+		.portrait-orientation
+			span
+				img(src='http://intertech-app6.pp.ua/themes/aatsu/assets/img/icons/rotate.gif', alt='rotate')
+		#main-navigation.closed.invisible
+			.logo
+				svg#svg2(xmlns:dc='http://purl.org/dc/elements/1.1/', xmlns:cc='http://creativecommons.org/ns#', xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#', xmlns:svg='http://www.w3.org/2000/svg', xmlns='http://www.w3.org/2000/svg', xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd', xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape', viewbox='0 0 200 159.66', xml:space='preserve', version='1.1', inkscape:version='0.91 r13725', sodipodi:docname='main-logo.svg')
+					sodipodi:namedview#namedview12(borderopacity='1', objecttolerance='10', gridtolerance='10', guidetolerance='10', showgrid='false')
+					defs#defs6
+						clippath#clipPath18(clippathunits='userSpaceOnUse')
+							path#path16(d='m 0,5867.721 4251.971,0 L 4251.971,0 0,0 Z', inkscape:connector-curvature='0')
+					path#path22(style='fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none', d='m 70.522224,100.63164 20.02415,-53.696005 -9.453626,-26.3192 -30.85486,80.015205 c -0.02768,0.052 20.284336,0 20.284336,0 m 39.471866,0 -10.090514,-27.4002 -10.089814,27.4002 z m 19.29965,0 c 0,0 20.2921,0.052 20.27958,0 l -30.86244,-80.015205 -9.46121,26.3192 z M 62.769508,2.35e-4 l 29.34204,0 7.792028,20.9716 7.768584,-20.9716 29.55833,0 L 200,159.66004 l -27.24045,0 -16.46209,-42.5698 -20.88422,0 15.96147,42.5698 -19.99595,0 c -4.59081,-12.3436 -15.46136,-42.5258 -15.46136,-42.5258 l -32.039278,0 -15.469122,42.5258 -19.98008,0 15.961466,-42.5698 -20.772628,0 -16.581788,42.5698 -27.03597,0 z', inkscape:connector-curvature='0')
+				.lines-holder
+					span.line
+					span.line
+					span.line
+			ul
+				li
+					a(href='#series', data-page='1') SERIES
+				li
+					a(href='#blog', data-page='2') BLOG
+				li
+					a(href='#about', data-page='3') ABOUT
+				li
+					a(href='#contact', data-page='4') CONTACT
+		#presentation(style='height: 979px;')
+			.background-holder(style='height: 1920px;')
+				img(src='http://pogorelov.cc.ua/aatsu/src/img/bg/10.jpg', alt='stone', style='height: auto; width: 100%; margin-top: -544.5px; margin-left: 0px;')
+			.foreground-holder(style='height: 1920px; -webkit-mask-position-x: 913px; -webkit-mask-position-y: -693px;')
+				img(src='http://pogorelov.cc.ua/aatsu/src/img/bg/9.jpg', alt='stone', style='height: auto; width: 100%; margin-top: -544.5px; margin-left: 0px;')
+		#application-holder
+			.socials-holder.deactive
+				ul
+					li
+						a(href='https://www.facebook.com/AATSUIII/', target='_blank')
+							i.fa.fa-facebook
+					li
+						a(href='https://www.instagram.com/_aatsu/', target='_blank')
+							i.fa.fa-instagram
+			#horizontal-viewport(style='width: 29600px; transform: translateX(0px);')
+				#animatedLogo
+					img(src='http://intertech-app6.pp.ua/themes/aatsu/assets/img/icons/main-logo.svg')
+				section#vertical-viewport.full-height(style='transform: translateY(0px);')
+					section#start.empty.full-height(data-before='state1', data-leave='state2', data-after='hideControls')
+					section#screen-1.screen-3.full-height(data-before='state3')
+						.container
+							.content-holder
+							p
+								| AATSU is a platform where an idea goes through stages from conceptualization to realization
+					section#screen-2.screen-3.full-height(data-before='state5')
+						.container
+							.content-holder
+							p
+								| AATSU III is a footwear brand made using unique technology that was developed after more than 5 years of hands on, shoemaking experience
+					section#logo.empty.full-height(data-before='state3')
+						.logo
+							svg#svg2(xmlns:dc='http://purl.org/dc/elements/1.1/', xmlns:cc='http://creativecommons.org/ns#', xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#', xmlns:svg='http://www.w3.org/2000/svg', xmlns='http://www.w3.org/2000/svg', xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd', xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape', viewbox='0 0 200 159.66', xml:space='preserve', version='1.1', inkscape:version='0.91 r13725', sodipodi:docname='main-logo.svg')
+								sodipodi:namedview#namedview12(borderopacity='1', objecttolerance='10', gridtolerance='10', guidetolerance='10', showgrid='false')
+								defs#defs6
+									clippath#clipPath18(clippathunits='userSpaceOnUse')
+										path#path16(d='m 0,5867.721 4251.971,0 L 4251.971,0 0,0 Z', inkscape:connector-curvature='0')
+								path#path22(style='fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none', d='m 70.522224,100.63164 20.02415,-53.696005 -9.453626,-26.3192 -30.85486,80.015205 c -0.02768,0.052 20.284336,0 20.284336,0 m 39.471866,0 -10.090514,-27.4002 -10.089814,27.4002 z m 19.29965,0 c 0,0 20.2921,0.052 20.27958,0 l -30.86244,-80.015205 -9.46121,26.3192 z M 62.769508,2.35e-4 l 29.34204,0 7.792028,20.9716 7.768584,-20.9716 29.55833,0 L 200,159.66004 l -27.24045,0 -16.46209,-42.5698 -20.88422,0 15.96147,42.5698 -19.99595,0 c -4.59081,-12.3436 -15.46136,-42.5258 -15.46136,-42.5258 l -32.039278,0 -15.469122,42.5258 -19.98008,0 15.961466,-42.5698 -20.772628,0 -16.581788,42.5698 -27.03597,0 z', inkscape:connector-curvature='0')
+							.lines-holder
+								span.line
+								span.line
+								span.line
+					section#clean.empty.full-height(data-before='showControls', data-leave='hideControls')
+				section#series.presentation.full-height
+					#gallery-slider.gallery-slider
+						.slider-viewport
+							.slider-holder(style='width: 1576px; transform: translateX(0px) translateZ(0px);')
+								.slide.active(style='width: 788px;')
+									.image-holder(data-modal='#product-4')
+										img(srcset='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a78/ff5/thumb_37_480x0_0_0_auto.jpg 675w,\
+										http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a78/ff5/56fa78ff5072e151875478.jpg', alt='…')
+								.slide(style='width: 788px;')
+									.image-holder(data-modal='#product-5')
+										img(srcset='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a7a/3b6/thumb_38_480x0_0_0_auto.jpg 675w,\
+										http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a7a/3b6/56fa7a3b6ce40672578189.jpg', alt='…')
+						.paginator-holder
+							.prev-slide
+							.page.active
+							.page
+							.next-slide
+				section#blog.presentation.full-height
+					#blog-slider.gallery-slider
+						.slider-viewport
+							.slider-holder(style='width: 3940px; transform: translateX(0px) translateZ(0px);')
+								.slide.active(style='width: 788px;')
+									.image-holder(data-modal='#post-5')
+										img(srcset='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a80/50a/thumb_41_480x0_0_0_auto.jpg 675w,\
+										http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a80/50a/56fa8050a9ef0931965536.jpg', alt='…')
+								.slide(style='width: 788px;')
+									.image-holder(data-modal='#post-6')
+										img(srcset='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a71/9a5/thumb_31_480x0_0_0_auto.jpg 675w,\
+										http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a71/9a5/56fa719a551a5488964365.jpg', alt='…')
+								.slide(style='width: 788px;')
+									.image-holder(data-modal='#post-7')
+										img(srcset='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a80/0e8/thumb_40_480x0_0_0_auto.jpg 675w,\
+										http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a80/0e8/56fa800e8ebe9448080465.jpg', alt='…')
+								.slide(style='width: 788px;')
+									.image-holder(data-modal='#post-8')
+										img(srcset='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a7f/e1b/thumb_39_480x0_0_0_auto.jpg 675w,\
+										http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a7f/e1b/56fa7fe1b7bba997424931.jpg', alt='…')
+								.slide(style='width: 788px;')
+									.image-holder(data-modal='#post-9')
+										img(srcset='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a76/25d/thumb_35_480x0_0_0_auto.jpg 675w,\
+										http://intertech-app6.pp.ua/storage/app/uploads/public/56f/a76/25d/56fa7625d2faf402584173.jpg', alt='…')
+						.paginator-holder
+							.prev-slide
+							.page.active
+							.page
+							.page
+							.page
+							.page
+							.next-slide
+				section#about.screen-3.full-height
+					.container
+						.content-holder
+						p.text-center
+							img(src='http://intertech-app6.pp.ua/storage/app/media/DSC_1441_s.jpg', data-verified='redactor')
+				section#contact.screen-3.full-height
+					.container
+						.content-holder
+						.data-block
+							h3 AATSU
+							p
+								| Ukraine & International
+							p
+								| 31, Kazimira Malevicha st
+							p
+								| 03680
+							p
+								| Kiev, Ukraine
+						.data-block
+							h3 COMMUNICATION
+							p Social Media:
+							p
+								a(href='mailto:support@aatsu.com') support@aatsu.com
+							p General inquiries:
+							p
+								a(href='mailto:andy.gonza@aatsu.com') andy.gonza@aatsu.com
+							p +3(80) 9 19 36 35 82:
+		.modal-holder
+			#product-4.modal-content
+				.modal-container
+					.container
+						.absolute-table
+							img(src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0c/8a0/56fc0c8a05e22304983077.svg')
+						p
+							| AATSU III is a platform where an idea goes through stages from conceptualization to realization and where RAZOR1 was born.
+							| Collection RAZOR1 is created from unexpected material - flexible stone.
+							| It is the innovative technologies behind the shoemaking that enable elasticity for the ultra-thin layer of slate stone which ultimately, allows this material to be re-contextualized and used in shoemaking.
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/20a/56fc0f20a94ca649070258.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/20a/thumb_57_480x0_0_0_auto.jpg', alt='…')
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/3bf/56fc0f3bf30eb573878815.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/3bf/thumb_58_480x0_0_0_auto.jpg', alt='…')
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/48c/56fc0f48c0859110483520.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/48c/thumb_59_480x0_0_0_auto.jpg', alt='…')
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/68e/56fc0f68ec525708542085.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/68e/thumb_60_480x0_0_0_auto.jpg', alt='…')
+						p
+							| Each stone slate has an exceptional unique imprint that’s organically created over years. Each stone unit represents out-and-outer stamp of nature that gives the soleness to each pair of shoes.
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/a52/56fc0fa52e629529708008.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/a52/thumb_61_480x0_0_0_auto.jpg', alt='…')
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/b46/56fc0fb469c23787810276.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/b46/thumb_62_480x0_0_0_auto.jpg', alt='…')
+						p
+							| Flexible stone is a unique material that requires special treatment and special cutting methods. Thus the laser beam copes with the task of creating a perfect line with incredible accuracy and extends the capabilities of this material.
+							| Collection RAZOR1 is the first part of the ideas implemented on AATSU platform.
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/e1c/56fc0fe1c7a1c788860641.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/e1c/thumb_63_480x0_0_0_auto.jpg', alt='…')
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/f2b/56fc0ff2b3dc9158845930.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/f2b/thumb_64_480x0_0_0_auto.jpg', alt='…')
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/fe1/56fc0ffe18437618875020.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0f/fe1/thumb_65_480x0_0_0_auto.jpg', alt='…')
+			#product-5.modal-content
+				.modal-container
+					.container
+						.absolute-table
+							img(src='/storage/app/uploads/public/56f/c0c/3b7/56fc0c3b743da240609355.svg')
+						p
+							| AATSU III
+							| Phenomenom
+							| FW 2016/2017
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/347/56fc0e34783de768841264.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/347/thumb_44_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/743/56fc0e7434cc8821589556.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/743/thumb_45_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/7d0/56fc0e7d0f50b748773229.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/7d0/thumb_46_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/8b8/56fc0e8b8318a640830148.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/8b8/thumb_47_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/952/56fc0e952b31a487921038.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/952/thumb_48_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/9f2/56fc0e9f24977577020497.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/9f2/thumb_49_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/a4f/56fc0ea4f25fb738222710.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/a4f/thumb_50_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/ac4/56fc0eac42d37666330094.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/ac4/thumb_51_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/b38/56fc0eb381034095599093.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/b38/thumb_52_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/c13/56fc0ec13e3d2860427467.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/c13/thumb_53_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/c91/56fc0ec9160d8673648400.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/c91/thumb_54_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/cf8/56fc0ecf814c9852569966.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/cf8/thumb_55_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/d72/56fc0ed72fbf5150914752.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c0e/d72/thumb_56_480x0_0_0_auto.jpg', alt='…')
+			#post-5.modal-content
+				.modal-container
+					.container
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c12/2e7/56fc122e7555d242566317.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c12/2e7/thumb_69_480x0_0_0_auto.jpg', alt='…')
+
+						img(data-src='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c12/350/56fc12350fb44200235220.jpg', data-src-small='http://intertech-app6.pp.ua/storage/app/uploads/public/56f/c12/350/thumb_70_480x0_0_0_auto.jpg', alt='…')
+
+		.stripe-loading-indicator
+			.stripe
+			.stripe-loaded
+
+		script(src='vendor/jquery/dist/jquery.js')
+		script(src='vendor/jquery.browser/dist/jquery.browser.min.js')
+		script(src='js/main.js')
