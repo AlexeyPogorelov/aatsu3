@@ -13,8 +13,10 @@
 
 body
 	font-family: 'Bender', sans-serif
+	background: #222
+	// background: #fff
 	color: #fff
-	font-size: 2vw
+	font-size: 1.2vw
 	letter-spacing: 0.5em
 body::-webkit-scrollbar
 	height: 0
@@ -25,12 +27,45 @@ a
 	color: #fff
 	letter-spacing: 0.5em
 
+p
+	color: #d1cdc0
+	font-size: 1.4vh
+	line-height: 1.3em
+	// text-transform: uppercase
+
+li
+	list-style: none
+
+.full-height
+	// padding: 20vw 0px
+	// display: none
+	position: relative
+	height: 100vh
+
 .preloader
 	.after
 
+.gallery-slider
+
+.content-holder
+	background: linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 10%, rgba(255,255,255,0.2) 90%, rgba(255,255,255,0) 100%)
+	position: absolute
+	top: 29.2vh
+	bottom: 20.6vh
+	padding: 2.9vh 15vw
+	// height: 50vw
+	width: 100%
+	column-count: 3
+	// column-width: 30vh
+	column-gap: 3.5vw
+	overflow: hidden
+	*
+		touch-callout: initial
+		user-select: initial
+		column-break-inside: avoid
 .portrait-orientation
-	background-color: #000000
-	color: #ffffff
+	background-color: #000
+	color: #fff
 	display: none
 	font-family: 'Bender', sans-serif
 	position: fixed
@@ -53,25 +88,132 @@ a
 		// display: table
 
 #main-navigation
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 1
 	.logo
+		background: #000
+		cursor: pointer
+		left: 50%
+		position: absolute
+		width: 7vw
+		transform: translateX(-50%)
+		transition: background .6s
+		z-index: 1
 		svg
+			path
+			margin: 1.2vw 34% 1.34vw
+			width: 32%
 		.lines-holder
+			text-align: center
+			font-size: 0
+			padding-bottom: 1.2vw
+			width: 100%
 			span.line
+				background: #fff
+				display: inline-block
+				margin: 0 0.11vw
+				height: 1.8vw
+				width: 0.34vw
+		&:hover
+			background: #fff
+			svg
+				path
+					fill: #000 !important
+			.lines-holder
+				span.line
+					background: #000
 	&.closed
 	&.invisible
 	ul
+		text-align: center
 		li
+			display: inline-block
+			margin: 3.5vw 4.7vw 0
+			a
+				text-decoration: none
+				position: relative
+				right: -1.1vw
+				letter-spacing: 0.4em
+				font-size: 0.88vw
+				padding: 0.20vw 0.6vw
+				transition: color 0s
+				span
+					position: relative
+					left: 0.1vw
+					line-height: 1em
+					z-index: 1
+				&:before, &:after
+					background-color: rgba(255,255,255,0)
+					content: ''
+					position: absolute
+					// transition: background 0.3s
+					z-index: 0
+				&:before
+					left: 0
+					top: 0
+					height: 100%
+					width: 100%
+				&:after
+					left: -0.3vw
+					top: 45%
+					height: 55%
+					width: 0.5vw
+				&:hover
+					color: #000
+					transition: color 0.3s
+					&:before, &:after
+						background-color: rgba(255,255,255,1)
+		li:nth-child(2)
+			margin-right: 12.8vw
+		li:nth-child(3)
+			margin-left: 12.8vw
 #presentation
-	.background-holder
-		img
-	.foreground-holder
-		img
+	z-index: -1
+	position: fixed
+	left: 0
+	top: 0
+	bottom: 0
+	right: 0
+	overflow: hidden
+	.background-holder, .foreground-holder
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		right: 0
+		overflow: hidden
+		height: 100vw
+		width: 100vw
+		.background
+			background-position: 50% 50%
+			background-size: cover
+			height: 100vh
+			width: 100vw
+	// .background-holder
+	// .foreground-holder
 #application-holder
-	.socials-holder.deactive
+	.socials-holder
+		position: fixed
+		bottom: 1vw
+		right: 1vw
+		opacity: 1
+		transition: opacity .6s
+		&.deactive
+			opacity: 0
 		ul
 			li
+				display: inline-block
+				font-size: 0
 				a
-					i
+					font-size: 1.2vw
+					opacity: .6
+					transition: opacity .3s
+					&:hover
+						opacity: 1
+						transition: opacity .1s
 	#horizontal-viewport
 		#animatedLogo
 			img
@@ -90,7 +232,7 @@ section#logo.empty
 		svg
 		.lines-holder
 			span.line
-section#series.presentation.full-height
+section#series.presentation
 	#gallery-slider.gallery-slider
 		.slider-viewport
 			.slider-holder
@@ -98,7 +240,7 @@ section#series.presentation.full-height
 					.image-holder
 						img
 					&.active
-section#blog.presentation.full-height
+section#blog.presentation
 	.gallery-slider
 		.slider-viewport
 			.slider-holder

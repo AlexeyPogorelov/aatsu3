@@ -52,18 +52,24 @@ html(lang='en')
 					span.line
 			ul
 				li
-					a(href='#series', data-page='1') SERIES
+					a(href='#series', data-page='1')
+						span SERIES
 				li
-					a(href='#blog', data-page='2') BLOG
+					a(href='#blog', data-page='2')
+						span BLOG
 				li
-					a(href='#about', data-page='3') ABOUT
+					a(href='#about', data-page='3')
+						span ABOUT
 				li
-					a(href='#contact', data-page='4') CONTACT
+					a(href='#contact', data-page='4')
+						span CONTACT
 		#presentation
 			.background-holder
-				img(src='http://pogorelov.cc.ua/aatsu/src/img/bg/10.jpg', alt='stone' )
+				.background(style='background-image:url(http://pogorelov.cc.ua/aatsu/src/img/bg/10.jpg)', alt='stone' )
+				//- img(src='http://pogorelov.cc.ua/aatsu/src/img/bg/10.jpg', alt='stone' )
 			.foreground-holder
-				img(src='http://pogorelov.cc.ua/aatsu/src/img/bg/9.jpg', alt='stone' )
+				.background(style='background-image:url(http://pogorelov.cc.ua/aatsu/src/img/bg/9.jpg)', alt='stone' )
+				//- img(src='http://pogorelov.cc.ua/aatsu/src/img/bg/9.jpg', alt='stone' )
 		#application-holder
 			.socials-holder.deactive
 				ul
@@ -74,10 +80,13 @@ html(lang='en')
 						a(href='https://www.instagram.com/_aatsu/', target='_blank')
 							i.fa.fa-instagram
 			#horizontal-viewport
-				#animatedLogo
+				//- #animatedLogo
 					img(src='http://intertech-app6.pp.ua/themes/aatsu/assets/img/icons/main-logo.svg')
 				section#vertical-viewport.full-height
 					section#start.empty.full-height(data-before='state1', data-leave='state2', data-after='hideControls')
+						.content-holder
+							p
+								|AATSU III is a footwear brand made using unique  technology that was developed after more  than 5 years of hands on, shoemaking  experience. It is that mindful and masterful approach to shoemaking that gives this brand thehighest value. AATSU III is a footwear brand made using unique  technology that was developed after more  than 5 years of hands on, shoemaking  experience. It is that mindful and masterful approach to shoemaking that gives this brand thehighest value. AATSU III is a footwear brand made using unique  technology that was developed after more  than 5 years of hands on, shoemaking  experience. It is that mindful and masterful approach to shoemaking that gives this brand thehighest value. AATSU III is a footwear brand made using unique  technology that was developed after more  than 5 years of hands on, shoemaking  experience. It is that mindful and masterful approach to shoemaking that gives this brand thehighest value. AATSU III is a footwear brand made using unique  technology that was developed after more  than 5 years of hands on, shoemaking  experience. It is that mindful and masterful approach to shoemaking that gives this brand thehighest value. AATSU III is a footwear brand made using unique  technology that was developed after more  than 5 years of hands on, shoemaking  experience. It is that mindful and masterful approach to shoemaking that gives this brand thehighest value. 
 					section#screen-1.screen-3.full-height(data-before='state3')
 						.container
 							.content-holder
@@ -88,7 +97,7 @@ html(lang='en')
 							.content-holder
 							p
 								| AATSU III is a footwear brand made using unique technology that was developed after more than 5 years of hands on, shoemaking experience
-					section#logo.empty.full-height(data-before='state3')
+					//- section#logo.empty.full-height(data-before='state3')
 						.logo
 							svg#svg2(xmlns:dc='http://purl.org/dc/elements/1.1/', xmlns:cc='http://creativecommons.org/ns#', xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#', xmlns:svg='http://www.w3.org/2000/svg', xmlns='http://www.w3.org/2000/svg', xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd', xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape', viewbox='0 0 200 159.66', xml:space='preserve', version='1.1', inkscape:version='0.91 r13725', sodipodi:docname='main-logo.svg')
 								sodipodi:namedview#namedview12(borderopacity='1', objecttolerance='10', gridtolerance='10', guidetolerance='10', showgrid='false')
